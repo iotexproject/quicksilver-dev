@@ -6,6 +6,7 @@ import {
   streamText,
   UIMessage,
   experimental_createMCPClient,
+  stepCountIs
 } from "ai";
 
 const openrouter = createOpenRouter({
@@ -38,6 +39,7 @@ export async function POST(req: Request) {
     tools: quicksilverTools,
     abortSignal: req.signal,
     maxRetries: 10,
+    stopWhen: stepCountIs(5),
   });
 
   return result.toUIMessageStreamResponse({
