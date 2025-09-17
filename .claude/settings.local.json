@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ide__getDiagnostics",
+      "Bash(npx tsc:*)",
+      "WebSearch",
+      "WebFetch(domain:context7.com)",
+      "WebFetch(domain:ai-sdk.dev)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
