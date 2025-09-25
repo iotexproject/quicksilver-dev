@@ -5,7 +5,8 @@
       "Bash(npx tsc:*)",
       "WebSearch",
       "WebFetch(domain:context7.com)",
-      "WebFetch(domain:ai-sdk.dev)"
+      "WebFetch(domain:ai-sdk.dev)",
+      "Bash(npm install)"
     ],
     "deny": [],
     "ask": []

@@ -1,27 +1,16 @@
 {
-  "name": "my-app",
+  "name": "quicksilver-monorepo",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@ai-sdk/openai": "^2.0.30",
-    "@ai-sdk/react": "^2.0.44",
-    "@openrouter/ai-sdk-provider": "^1.2.0",
-    "ai": "^5.0.44",
-    "next": "15.5.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "dev": "npm run dev --workspace=ai-example",
+    "build": "npm run build --workspaces",
+    "start": "npm run start --workspace=ai-example"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "typescript": "^5"
   }
 }
